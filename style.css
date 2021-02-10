@@ -1,0 +1,98 @@
+/* Calculator Assignment # 07 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e ,#236ad5, #23d5ab);
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+}
+@keyframes change {
+0%{
+    background-position: 0 50%;
+}
+50%{
+    background-position: 100% 50%;
+}
+100%{
+    background-position: 0 50%;
+}
+}
+.calc{
+    position: relative;
+    top: 20px;
+}
+.calcArea{
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid white;
+    padding: 20px;
+}
+#result{
+    display: block;
+    max-width: 360px;
+    height: 50px;
+    font-size: 30px;
+    outline: none;
+    padding: 30px;
+    border-radius: 20px;
+    border-style: none;
+    margin-bottom: 10px;
+    color: green;
+    text-align: right;
+}
+#change{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+button{
+    width: 18%;
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 10px;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#extraC:hover{
+    background: red;
+    border: none;
+}
+#extraNum:hover{
+    background: rgb(12, 54, 12);
+    border: none;
+}
+#extraSign1:hover{
+    background: darkblue;
+    border: none;
+}
+#extraSign:hover{
+    background: yellow;
+    color: black;
+    border: none;
+}
+@media only screen and (max-width: 410px) {
+    #result{
+        width: 100%;
+    }
+    button{
+        margin: 5px;
+        width: 19%;
+        padding: 15px;
+        font-size: 15px;
+    }
+}
